@@ -8,17 +8,17 @@ namespace ClassMetotDemo
     {
         public void Add(Musteri musteri)
         {
-            Console.WriteLine("Müşteri Eklendi : " + musteri.Adi);
+            Console.WriteLine(musteri.Id + " " + musteri.Adi + " " + musteri.Soyadi + " Müşteri Eklendi");
         }
 
         public void Delete(Musteri musteri)
         {
-            Console.WriteLine("Müşteri Silindi : " + musteri.Adi);
+            Console.WriteLine(musteri.Id + " " + musteri.Adi + " " + musteri.Soyadi + " Müşteri Silindi");
         }
 
-        public void List(Musteri musteri)
+        public void List()
         {
-            Console.WriteLine("Müşteri Listelendi : " + musteri.Adi);
+            Console.WriteLine(" Müşteri Listelesi");
         }
     }
 }

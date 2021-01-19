@@ -23,8 +23,15 @@ namespace ClassMetotDemo
             musteriManager.Add(musteri2);
             musteriManager.Delete(musteri1);
             musteriManager.Delete(musteri2);
-            musteriManager.List(musteri1);
-            musteriManager.List(musteri2);
+            musteriManager.List();
+
+
+            Musteri[] musteriler = new Musteri[] { musteri1, musteri2 };
+            foreach (Musteri musteri in musteriler)
+            {
+                Console.WriteLine(musteri.Id + " " + musteri.Adi + " " + musteri.Soyadi);
+
+            }
 
 
             Console.ReadLine();
